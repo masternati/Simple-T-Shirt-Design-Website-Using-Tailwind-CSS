@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/61673d36fe.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,9 +25,9 @@
     <header>
         <nav class="flex justify-between mt-6 mx-5">
             <h1 class="text-3xl">ToolM5</h1>
-            <div class="flex justify-between sm:flex-row-reverse">
+            <div class="flex justify-between">
                 <div>
-                    <ul class="lg:flex justify-between text-2xl hidden lg:block">
+                    <ul id="menu" class="lg:flex justify-between text-2xl hidden lg:block">
                         <li class="mx-5 hover:scale-125"><a href="about.html" target="_blank">About Us</a></li>
                         <li class="mx-5 hover:scale-125"><a href="service.html">Services</a></li>
                         <li class="mx-5 hover:scale-125"><a href="contract.html">Contract</a></li>
@@ -37,12 +38,16 @@
                     <li class="mx-4 text-3xl list-none"><a href=""><i class="fa-brands fa fa-twitter"></i></a></li>
                     <li class="mx-4 text-3xl list-none"><a href=""><i class="fa-brands fa fa-instagram"></i></a></li>
                 </div>
-                <i class="fa-solid fa fa-bars text-3xl lg:hidden "></i>
+                <button id="menuBar" class="sticky"><i class="sticky fa-solid fa fa-bars text-3xl lg:hidden "></i></button>
+                <div id="mymenu">
+
+                </div>
+
                 <button type="submit" class="text-2xl bg-lime-400 px-6 py-2 rounded-3xl border-solid border-2 border-black  hover:origin-bottom hover:-rotate-3 hover:scale-125 hidden sm:block">Get Started <i class="fa-solid fa fa-angle-right bg-black text-lime-400 rounded-full px-2"></i></button>
             </div>
         </nav>
 
-        <section class="h-screen bg-lime-400 rounded-lg mt-10 items-center flex justify-center flex-col">
+        <section class="h-screen sticky bg-lime-400 rounded-lg mt-10 items-center flex justify-center flex-col">
             <h1 class="mb-14 text-4xl"> Create your</h1>
             <h1  class="mb-14 text-8xl">T-Shirt Design</h1>
             <button type="submit" class="hover:animate-bounce mb-16 text-4xl bg-gray-900 px-4 py-2 rounded-3xl border-solid border-2 border-white text-white"><a href="#">Get Started</a></button>
@@ -148,5 +153,7 @@
             </div>
         </article>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
